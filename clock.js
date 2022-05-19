@@ -11,8 +11,8 @@ function yoni(yoo) {
   setInterval(function () {
     d = new Date();
     second = d.getSeconds() *6;
-    minuits = d.getMinutes() * 6;
-    hour = d.getHours() * 30;
+    minuits = d.getMinutes() * 6;   
+    hour = d.getHours() %12*30;
 
     secondEl.style.transform = "rotate(" + second + "deg)";
     minuteEl.style.transform = "rotate(" + minuits + "deg)";
@@ -20,6 +20,8 @@ function yoni(yoo) {
    
   }, 1000);
   
-}
+}      
 yoni();
-   
+      
+       
+
